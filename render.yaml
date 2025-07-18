@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kosodate-line-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: LINE_CHANNEL_SECRET
+        value: your-channel-secret
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        value: your-access-token
